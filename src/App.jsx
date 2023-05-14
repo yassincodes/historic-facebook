@@ -79,23 +79,21 @@ function App() {
               <Route path="/Videos" element={<Videos />} />
               <Route path="/Accounts" element={<Accounts />} />
               <Route path="/Menu" element={<Menu />} />
-              <Route path="/AbuMakhtouta5" element={<Profile />} />
 
-              <Route path="/Elissa" element={<Profile />} />
+              <Route path="/elissa" element={<Profile />} />
               <Route path="/hannibal" element={<Profile />} />
-              <Route path="/IbnKhaldoun" element={<Profile />} />
-              <Route path="/News5" element={<Profile />} />
-              <Route path="/AbdelazizThaalbi" element={<Profile />} />
-              <Route path="/AbuMakhtouta6" element={<Profile />} />
-              <Route path="/Barbarossa" element={<Profile />} />
-              <Route path="/Bourguiba" element={<Profile />} />
-              <Route path="/CharlesV" element={<Profile />} />
-              <Route path="/FarhatHached" element={<Profile />} />
-              <Route path="/HayreddinPasha" element={<Profile />} />
-              <Route path="/JulesFerry" element={<Profile />} />
-              <Route path="/Khaznadar" element={<Profile />} />
-              <Route path="/News6" element={<Profile />} />
-              <Route path="/SinanPasha" element={<Profile />} />
+              <Route path="/ibn-khaldoun" element={<Profile />} />
+              <Route path="/news5" element={<Profile />} />
+              <Route path="/abdelaziz_thaalbi" element={<Profile />} />
+              <Route path="/barbarossa" element={<Profile />} />
+              <Route path="/bourguiba" element={<Profile />} />
+              <Route path="/charlesV" element={<Profile />} />
+              <Route path="/farhat_hached" element={<Profile />} />
+              <Route path="/hayreddin_pasha" element={<Profile />} />
+              <Route path="/jules_ferry" element={<Profile />} />
+              <Route path="/khaznadar" element={<Profile />} />
+              <Route path="/news6" element={<Profile />} />
+              <Route path="/sinan_pasha" element={<Profile />} />
 
               <Route path="/hi" element={<Hashtag />} />
               <Route path="/hi2" element={<Hashtag />} />
