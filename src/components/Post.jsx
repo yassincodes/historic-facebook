@@ -23,8 +23,14 @@ function Post({ pic, name, username, text, image, hashtag, hashtagLink }) {
           >
             #{hashtag}
           </Link>
-          <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
-            <img style={{width: "80vw", padding: "20px"}} src={image} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img style={{ width: "80vw", padding: "20px" }} src={image} />
           </div>
         </div>
         <div className="post-like-comment">
@@ -68,6 +74,26 @@ function Post({ pic, name, username, text, image, hashtag, hashtagLink }) {
                 <line x1="12" y1="11" x2="12" y2="11.01" />
                 <line x1="8" y1="11" x2="8" y2="11.01" />
                 <line x1="16" y1="11" x2="16" y2="11.01" />
+              </svg>
+            </div>
+          </div>
+          <div className="post-share">
+            <div>مشاركة</div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-share-3"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M13 4v4c-6.575 1.028 -9.02 6.788 -10 12c-.037 .206 5.384 -5.962 10 -6v4l8 -7l-8 -7z" />
               </svg>
             </div>
           </div>
