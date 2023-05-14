@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Tajawal", sans-serif;
+}
+
+.phoneHeader {
+  display: block;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.laptopHeader {
+  display: none;
+}
+
+.more-info-button {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .phoneHeader {
+    display: none;
+  }
+
+  .laptopHeader {
+    display: block;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .more-info-button {
+    display: initial;
+  }
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* laptop view styling */
+.laptop-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+}
+
+.laptop-four-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.facebook-icon {
+  width: 10vw;
+  display: flex;
+  justify-content: end;
+}
+
+@media only screen and (max-width: 700px) {
+  .facebook-icon {
+    width: 8vw;
+  }
+}
+
+.laptop-four-icons > div {
+  margin-left: 40px;
+  padding: 10px;
+}
+
+.laptop-four-icons-home-icon:hover {
+  background: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.laptop-four-icons-hashtags-icon:hover {
+  background: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.laptop-four-icons-videos-icon:hover {
+  background: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.laptop-four-icons-accounts-icon:hover {
+  background: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.laptop-two-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* phone view styling */
+.phone-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+}
+
+.two-icons-right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.two-icons-left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  margin-left: 40px;
+  padding: 10px;
+}
+
+.menu:hover {
+  background: rgb(248, 248, 248);
+  border-radius: 20px;
+}
+
+.home,
+.hashtags,
+.videos,
+.accounts {
+  background: #e0e0e0;
+}
+
+.accounts {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  direction: rtl
+}
+
+@media (min-width: 768px) {
+  .accounts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .accounts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* styling class picker */
+.class-picker-container {
+  display: flex;
+  justify-content: center;
+}
+
+.class-picker {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin: 20px;
+  border-radius: 20px;
+  width: 70vw;
+  padding: 10px;
+}
+
+.class-picker-5 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-picker-6 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* styling post */
+.post-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.post {
+  width: 80vw;
+  background: white;
+  border-radius: 20px;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: end;
+  margin: 10px;
+}
+
+.post-character-name {
+  margin-right: 10px;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+.post-content {
+  direction: rtl;
+  margin: 10px;
+}
+
+.post-like-comment {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px;
+}
+
+.post-like,
+.post-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/* the css for the profile */
