@@ -14,11 +14,11 @@ const CharlesV = [
     name: "شارل الخامس",
     username: "charlesV",
     pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Titian_-_Portrait_of_Charles_V_Seated_-_WGA22964.jpg/531px-Titian_-_Portrait_of_Charles_V_Seated_-_WGA22964.jpg",
-    text: "كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم",
+    text: "",
     image: "",
     video: "",
     data: "",
   },
 ];
 
-export default CharlesV
+export default CharlesV;

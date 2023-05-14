@@ -82,7 +82,7 @@ function App() {
 
               <Route path="/elissa" element={<Profile />} />
               <Route path="/hannibal" element={<Profile />} />
-              <Route path="/ibn-khaldoun" element={<Profile />} />
+              <Route path="/ibn_khaldoun" element={<Profile />} />
               <Route path="/news5" element={<Profile />} />
               <Route path="/abdelaziz_thaalbi" element={<Profile />} />
               <Route path="/barbarossa" element={<Profile />} />

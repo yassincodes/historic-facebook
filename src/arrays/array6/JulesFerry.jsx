@@ -14,11 +14,11 @@ const JulesFerry = [
     name: "جول فيري",
     username: "jules_ferry",
     pic: "https://i.f1g.fr/media/ext/299x250/image2.evene.fr/files/celebrity/1424.jpg",
-    text: "كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم",
+    text: "",
     image: "",
     video: "",
     data: "",
   },
 ];
 
-export default JulesFerry
+export default JulesFerry;

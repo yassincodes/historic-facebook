@@ -14,7 +14,7 @@ const News5 = [
     name: "الإخبارية",
     username: "news5",
     text: "https://www.aljazeera.net/wp-content/uploads/2019/01/eb1133d8-5ee0-4759-bde0-efc1553ac210.jpeg?resize=770%2C513&quality=80",
-    text: "أهلا أنا عليسة 👋 مؤسسة قرطاج وملكتها الأولى",
+    text: "",
     image: "",
     video: "",
     data: "",

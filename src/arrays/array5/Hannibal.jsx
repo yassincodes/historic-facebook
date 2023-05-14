@@ -17,7 +17,7 @@ const Hannibal = [
     name: "حنبعل",
     username: "hannibal",
     pic: "https://phoenician.org/wp-content/uploads/2020/10/hannibal_barca-815x1024.jpg",
-    text: "كلام مهم كلام مهم كلام مهم",
+    text: "",
     image:  "",
     video: "",
     date: "",

@@ -117,8 +117,8 @@ function Accounts() {
                 {character.name}
               </div>
 
-              {character.username === "News6" ||
-              character.username === "News5" ? (
+              {character.username === "news6" ||
+              character.username === "news5" ? (
                 <div
                   style={{ background: "white", padding: "30px 5px 30px 5px" }}
                 >

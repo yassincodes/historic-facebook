@@ -14,11 +14,11 @@ const AbdelazizThaalbi = [
     name: "عبد العزيز الثعالبي",
     username: "abdelaziz_thaalbi",
     pic: "https://upload.wikimedia.org/wikipedia/commons/2/29/Abdelaziz_Th%C3%A2albi_2.jpg",
-    text: "كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم كلام مهم",
+    text: "",
     image: "",
     video: "",
     data: "",
   },
 ];
 
-export default AbdelazizThaalbi
+export default AbdelazizThaalbi;

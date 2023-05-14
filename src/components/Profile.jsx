@@ -197,8 +197,8 @@ function Profile() {
                       </div>
                     </div>
                     <div>
-                      {info.username === "News6" ||
-                      info.username === "News5" ? (
+                      {info.username === "news6" ||
+                      info.username === "news5" ? (
                         ""
                       ) : (
                         <a
