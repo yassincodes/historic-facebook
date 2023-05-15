@@ -16,10 +16,12 @@ const Bourguiba = [
     name: "الحبيب بورقيبة",
     username: "bourguiba",
     pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Habib_Bourguiba_portrait4.jpg/360px-Habib_Bourguiba_portrait4.jpg",
-    text: "",
+    text: "أعلن اليوم 20 مارس 1956, إستقلال البلاد التونسية",
     image: "",
     video: "",
     data: "",
+    hashtag: "تونس",
+    hashtagLink: "tunisia",
   },
 ];
 

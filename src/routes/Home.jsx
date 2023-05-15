@@ -1,7 +1,9 @@
 import Header from "../components/Header";
 import ClassPicker from "../components/ClassPicker";
+import { useContext } from "react";
 import Post from "../components/Post";
 import { motion, AnimatePresence } from "framer-motion";
+import { Context } from "../Context";
 
 import Elissa from "../arrays/array5/Elissa";
 import Hannibal from "../arrays/array5/Hannibal";
@@ -52,6 +54,21 @@ const allPosts = [
   SinanPashaPosts,
 ];
 
+const Posts5 = [ElissaPosts, HannibalPosts, IbnKhaldounPosts, News5Posts];
+
+const Posts6 = [
+  AbdelazizThaalbiPosts,
+  BarbarossaPosts,
+  BourguibaPosts,
+  CharlesVPosts,
+  FarhatHachedPosts,
+  HayreddinPashaPosts,
+  JulesFerryPosts,
+  KhaznadarPosts,
+  News6Posts,
+  SinanPashaPosts,
+];
+
 console.log(allPosts.map((array) => array[0]));
 
 function Home() {
@@ -64,33 +81,45 @@ function Home() {
     animate: { opacity: 1, scale: 1, transition: { duration: 0.9 } },
   };
 
+  const { checkbox1, checkbox2, selectedCheckbox } = useContext(Context);
+  console.log(selectedCheckbox);
+
+  const mainArray =
+    selectedCheckbox === 1
+      ? Posts5
+      : selectedCheckbox === 2
+      ? Posts6
+      : allPosts;
+
   return (
     <div className="home">
       <Header />
+
       <AnimatePresence>
-        {allPosts
-          .flat()
-          .map((obj) => obj)
-          .sort(() => Math.random() - 0.5)
-          .map((post, index) => (
-            <motion.div
-              key={getKey(index)}
-              variants={postVariants}
-              initial="initial"
-              animate="animate"
-              transition={{ delay: index * 0.1 }}
-            >
-              <Post
-                text={post.text}
-                image={post.image}
-                hashtag={post.hashtag}
-                hashtagLink={post.hashtagLink}
-                name={post.name}
-                username={post.username}
-                pic={post.pic}
-              />
-            </motion.div>
-          ))}
+        {mainArray &&
+          mainArray
+            .flat()
+            .map((obj) => obj)
+            .sort(() => Math.random() - 0.5)
+            .map((post, index) => (
+              <motion.div
+                key={getKey(index)}
+                variants={postVariants}
+                initial="initial"
+                animate="animate"
+                transition={{ delay: index * 0.1 }}
+              >
+                <Post
+                  text={post.text}
+                  image={post.image}
+                  hashtag={post.hashtag}
+                  hashtagLink={post.hashtagLink}
+                  name={post.name}
+                  username={post.username}
+                  pic={post.pic}
+                />
+              </motion.div>
+            ))}
       </AnimatePresence>
       <div style={{ height: "1vh" }}></div>
     </div>

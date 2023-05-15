@@ -59,26 +59,6 @@ function LaptopHeader() {
             </svg>
           </Link>
         </div>
-        <div className="laptop-four-icons-videos-icon">
-          <Link to="/videos">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-video"
-              width="44"
-              height="44"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke={isOnPage("/videos") ? "#3578E5" : "#2c3e50"}
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
-              <rect x="3" y="6" width="12" height="12" rx="2" />
-            </svg>
-          </Link>
-        </div>
         <div className="laptop-four-icons-accounts-icon">
           <Link to="/accounts">
             <svg
@@ -121,7 +101,7 @@ function LaptopHeader() {
             <path d="M8 13l3 -2l2 2l3 -2" />
           </svg>
         </a>
-        <div>
+        <Link to="/account">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-user-circle"
@@ -139,7 +119,7 @@ function LaptopHeader() {
             <circle cx="12" cy="10" r="3" />
             <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
           </svg>
-        </div>
+        </Link>
       </div>
     </div>
   );

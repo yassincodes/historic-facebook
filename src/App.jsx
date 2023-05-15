@@ -13,11 +13,11 @@ import { motion } from "framer-motion";
 import logo from "./assets/logo.png";
 import Home from "./routes/Home";
 import Hashtags from "./routes/Hashtags";
-import Videos from "./routes/Videos";
 import Accounts from "./routes/Accounts";
 import Menu from "./routes/Menu";
 import Profile from "./components/Profile";
 import Hashtag from "./components/Hashtag";
+import Account from "./routes/Account";
 import { Routes, Route } from "react-router-dom";
 import { Spinner } from "@chakra-ui/react";
 
@@ -76,9 +76,9 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/hashtags" element={<Hashtags />} />
-              <Route path="/Videos" element={<Videos />} />
               <Route path="/Accounts" element={<Accounts />} />
               <Route path="/Menu" element={<Menu />} />
+              <Route path="/Account" element={<Account />} />
 
               <Route path="/elissa" element={<Profile />} />
               <Route path="/hannibal" element={<Profile />} />
@@ -95,8 +95,11 @@ function App() {
               <Route path="/news6" element={<Profile />} />
               <Route path="/sinan_pasha" element={<Profile />} />
 
-              <Route path="/hi" element={<Hashtag />} />
-              <Route path="/hi2" element={<Hashtag />} />
+              <Route path="/carthage" element={<Hashtag />} />
+              <Route path="/news" element={<Hashtag />} />
+              <Route path="/carthage_vs_rome" element={<Hashtag />} />
+              <Route path="/history" element={<Hashtag />} />
+              <Route path="/tunisia" element={<Hashtag />} />
             </Routes>
           )}
         </div>
